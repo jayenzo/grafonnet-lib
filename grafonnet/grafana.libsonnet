@@ -13,6 +13,7 @@
   singlestat:: import 'singlestat.libsonnet',
   pieChartPanel:: import 'pie_chart_panel.libsonnet',
   influxdb:: import 'influxdb.libsonnet',
+  azure:: import 'azure.libsonnet',
   prometheus:: import 'prometheus.libsonnet',
   loki:: import 'loki.libsonnet',
   sql:: import 'sql.libsonnet',

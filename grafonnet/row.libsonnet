@@ -20,7 +20,7 @@
     collapse=false,
     repeat=null,
     showTitle=null,
-    titleSize='h6'
+    titleSize='h5'
   ):: {
     collapse: collapse,
     collapsed: collapse,
