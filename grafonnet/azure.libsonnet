@@ -1,43 +1,32 @@
 {
   /**
-   * Creates a [Azure target](3/prometheus/)
+   * Creates a [Azure target]
    * to be added to panels.
    *
-   * @name prometheus.target
+   * @name azure.target
    *
-   * @param expr PromQL query to be exercised against Prometheus. Checkout [Prometheus documentation](https://prometheus.io/docs/prometheus/latest/querying/basics/).
-   * @param format (default `'time_series'`) Switch between `'table'`, `'time_series'` or `'heatmap'`. Table will only work in the Table panel. Heatmap is suitable for displaying metrics of the Histogram type on a Heatmap panel. Under the hood, it converts cumulative histograms to regular ones and sorts series by the bucket bound.
-   * @param intervalFactor (default `2`)
-   * @param legendFormat (default `''`) Controls the name of the time series, using name or pattern. For example `{{hostname}}` is replaced with the label value for the label `hostname`.
+   * @param 
+   * @param 
+   * @param 
+   * @param 
    * @param datasource (optional) Name of the Prometheus datasource. Leave by default otherwise.
-   * @param interval (optional) Time span used to aggregate or group data points by time. By default Grafana uses an automatic interval calculated based on the width of the graph.
-   * @param instant (optional) Perform an "instant" query, to return only the latest value that Prometheus has scraped for the requested time series. Instant queries return results much faster than normal range queries. Use them to look up label sets.
-   * @param hide (optional) Set to `true` to hide the target from the panel.
+   * @param 
+   * @param 
+   * @param 
    *
-   * @return A Prometheus target to be added to panels.
+   * @return A Azure target to be added to panels.
    */
 
  target(
+    azureMonitor,
+    queryType='Azure Monitor',
+    azureLogAnalytics,
+    azureResourceGraph,
+    appInsights,
+    insightsAnalytics,
+    subscription,
+    subscriptions,
     datasource=null,
-    expr,
-    queryType=null,
-    resourceGroup=null ,
-    metricDefinition ,
-    resourceName=null,
-    format='time_series',
-    intervalFactor=2,
-    metricNamespace=null ,
-    metricName=null,
-    legendFormat='',
-    dimensionFilter=null,
-    timeGrain=null,
-    interval=null,
-    top,
-    aggOptions ,
-    timeGrains ,
-    dimensionFilters ,
-    aggregation ,
-    hide=null,
   ):: {
     [if hide != null then 'hide']: hide,
     [if datasource != null then 'datasource']: datasource,
