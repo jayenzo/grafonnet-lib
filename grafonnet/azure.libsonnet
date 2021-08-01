@@ -10,7 +10,7 @@
    * @param 
    * @param 
    * @param datasource (optional) Name of the Prometheus datasource. Leave by default otherwise.
-   * @param 
+   * @param
    * @param 
    * @param 
    *
@@ -20,21 +20,15 @@
  target(
     azureMonitor,
     queryType='Azure Monitor',
-    azureLogAnalytics,
-    azureResourceGraph,
-    appInsights,
-    insightsAnalytics,
-    subscription,
-    subscriptions,
+    azureLogAnalytics=null,
+    azureResourceGraph=null,
+    appInsights=null,
+    insightsAnalytics=null,
+    subscription=null,
+    subscriptions=null,
     datasource=null,
   ):: {
-    [if hide != null then 'hide']: hide,
+    azureMonitor: azureMonitor,
     [if datasource != null then 'datasource']: datasource,
-    expr: expr,
-    format: format,
-    intervalFactor: intervalFactor,
-    legendFormat: legendFormat,
-    [if interval != null then 'interval']: interval,
-    [if instant != null then 'instant']: instant,
   },
 }
