@@ -48,6 +48,7 @@
    */
   new(
     title,
+    scopedVars,
     format='none',
     description='',
     interval=null,
@@ -114,6 +115,7 @@
       [if span != null then 'span']: span,
       type: 'singlestat',
       datasource: datasource,
+      scopedVars: scopedVars,
       targets: [
       ],
       links: links,
