@@ -116,7 +116,20 @@
           [if noValue != null then 'noValue']: noValue,
           thresholds: {
             mode: thresholdsMode,
-            steps: [],
+            steps: [ 
+              {
+               "value": null,
+               "color": "green"
+              },
+              {
+                "value": 80,
+                "color": "orange"
+              },
+              {
+                "value": 90,
+                "color": "red"
+              }
+            ]
           },
           mappings: [],
           links: [],
