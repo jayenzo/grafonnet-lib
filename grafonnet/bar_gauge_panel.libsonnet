@@ -50,7 +50,7 @@
                "color": "green"
               },
               {
-                "value": 80,
+                "value": 50,
                 "color": "orange"
               },
               {
