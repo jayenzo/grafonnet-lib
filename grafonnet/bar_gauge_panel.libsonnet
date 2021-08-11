@@ -26,7 +26,7 @@
     datasource: datasource,
     targets: [
     ],
-    options: {
+   options: {
     reduceOptions: {
       values: false,
       calcs: [
