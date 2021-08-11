@@ -39,15 +39,39 @@
     displayMode: "gradient",
     showUnfilled: true
   },
-    fieldConfig: {
-      defaults: {
-        unit: unit,
-        thresholds: {
-          mode: 'absolute',
-          steps: thresholds,
-        },
+
+   fieldConfig: {
+    defaults: {
+      thresholds: {
+        mode: "absolute",
+        steps: [
+          {
+            "value": null,
+            "color": "green"
+          },
+          {
+            "value": 80,
+            "color": "red"
+          }
+        ]
       },
+      mappings: [],
+      color: {
+        "mode": "thresholds"
+      },
+      displayName: "Memory %"
     },
+    overrides: []
+    },
+    // fieldConfig: {
+    //   defaults: {
+    //     unit: unit,
+    //     thresholds: {
+    //       mode: 'absolute',
+    //       steps: 
+    //     },
+    //   },
+    // },
     _nextTarget:: 0,
     addTarget(target):: self {
       // automatically ref id in added targets.
