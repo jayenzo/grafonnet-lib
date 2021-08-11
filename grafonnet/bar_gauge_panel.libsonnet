@@ -26,6 +26,19 @@
     datasource: datasource,
     targets: [
     ],
+    options: {
+    reduceOptions: {
+      values: false,
+      calcs: [
+        "lastNotNull"
+      ],
+      fields: ""
+    },
+    orientation: "horizontal",
+    text: {},
+    displayMode: "gradient",
+    showUnfilled: true
+  },
     fieldConfig: {
       defaults: {
         unit: unit,
