@@ -45,19 +45,19 @@
       thresholds: {
         mode: "absolute",
         steps: [
-          {
-               "value": null,
-               "color": "green"
+            {
+               "value": 10,
+               "color": "red"
               },
               {
-                "value": 80,
+                "value": 20,
                 "color": "orange"
               },
               {
-                "value": 90,
-                "color": "red"
+                "value": 30,
+                "color": "green"
               }
-         ]
+        ]
       },
       mappings: [],
       color: {

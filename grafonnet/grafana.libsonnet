@@ -29,6 +29,7 @@
   gaugePanel:: import 'gauge_panel.libsonnet',
   gaugePanelreverse:: import 'gauge_panelreverse.libsonnet',
   barGaugePanel:: import 'bar_gauge_panel.libsonnet',
+  barGaugePanelreverse:: import 'bar_gauge_panelreverse.libsonnet',
   statPanel:: import 'stat_panel.libsonnet',
   transformation:: import 'transformation.libsonnet',
 }
