@@ -63,7 +63,6 @@
       color: {
         "mode": "thresholds"
       },
-      displayName: "Machine %"
     },
     overrides: []
     },
