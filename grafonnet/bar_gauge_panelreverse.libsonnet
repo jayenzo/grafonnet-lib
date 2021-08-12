@@ -36,7 +36,7 @@
     },
     orientation: "horizontal",
     text: {},
-    displayMode: "gradient",
+    displayMode: "lcd",
     showUnfilled: true
   },
 
